@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 import javax.swing.DefaultListModel;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -48,11 +49,17 @@ public class List extends javax.swing.JFrame {
         jCheckBox10 = new javax.swing.JCheckBox();
         jScrollBar1 = new javax.swing.JScrollBar();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(102, 255, 102));
+        setBackground(new java.awt.Color(204, 204, 255));
         setForeground(new java.awt.Color(153, 255, 153));
+        setIconImages(null);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jCheckBox1.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox1.setText("SE 46A");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,22 +67,31 @@ public class List extends javax.swing.JFrame {
             }
         });
 
+        jCheckBox2.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox2.setText("SE 46B");
 
+        jCheckBox3.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox3.setText("SE 131");
 
+        jCheckBox4.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox4.setText("SE 133");
 
+        jCheckBox6.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox6.setText("SE 185");
 
+        jCheckBox7.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox7.setText("SE 148");
 
+        jCheckBox5.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox5.setText("SE 165");
 
+        jCheckBox8.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox8.setText("SE 149");
 
+        jCheckBox9.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox9.setText("SE 120");
 
+        jCheckBox10.setBackground(new java.awt.Color(255, 255, 255));
         jCheckBox10.setText("SE 166");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -87,33 +103,33 @@ public class List extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jCheckBox3)
                     .addComponent(jCheckBox4)
-                    .addComponent(jCheckBox6)
-                    .addComponent(jCheckBox7)
                     .addComponent(jCheckBox1)
                     .addComponent(jCheckBox2)
                     .addComponent(jCheckBox5)
                     .addComponent(jCheckBox8)
                     .addComponent(jCheckBox9)
-                    .addComponent(jCheckBox10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                    .addComponent(jCheckBox10)
+                    .addComponent(jCheckBox7)
+                    .addComponent(jCheckBox6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(17, 17, 17)
                 .addComponent(jCheckBox1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jCheckBox4)
                 .addGap(5, 5, 5)
+                .addComponent(jCheckBox4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jCheckBox8)
@@ -121,7 +137,7 @@ public class List extends javax.swing.JFrame {
                 .addComponent(jCheckBox9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBox10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
             .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -132,28 +148,37 @@ public class List extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel1.setText("List of Class for Software Engineering");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(339, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(257, 257, 257))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(277, 277, 277))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(195, 195, 195)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(282, 282, 282)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(217, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(308, 308, 308))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(162, Short.MAX_VALUE)
+                .addContainerGap(116, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
+                .addGap(37, 37, 37)
                 .addComponent(jButton1)
-                .addGap(71, 71, 71))
+                .addGap(97, 97, 97))
         );
 
         pack();
@@ -246,13 +271,26 @@ Calendar cal = Calendar.getInstance();
             dateList.add(date);
             
         }
-       String[] arrayObjectClass =(String[]) list.toArray(new String[list.size()]);
-       String[] arrayObjectDate = (String[]) dateList.toArray(new String[list.size()]);
-       Log log = new Log();
-       Log.ClassTaken.setListData(arrayObjectClass);
-       Log.ListDate.setListData(arrayObjectDate);
-       
-       log.setVisible(true);
+       if( list.size() > 4)
+       {
+           JOptionPane.showMessageDialog(null, "You cannot take more than 4 classes!", 
+                   "InfoBox: Error" + "Registration Class", JOptionPane.INFORMATION_MESSAGE);
+           list.clear();
+           dateList.clear();
+       }else if(list.size() == 0)
+       {
+           JOptionPane.showMessageDialog(null, "Choos a class to register!", 
+                   "InfoBox: Error" + "Registration Class", JOptionPane.INFORMATION_MESSAGE);
+       }
+       else {
+        String[] arrayObjectClass =(String[]) list.toArray(new String[list.size()]);
+        String[] arrayObjectDate = (String[]) dateList.toArray(new String[list.size()]);
+        AnyMedia log = new AnyMedia();
+        AnyMedia.ListClass.setListData(arrayObjectClass);
+        AnyMedia.ListDate.setListData(arrayObjectDate);
+         this.setVisible(false);
+        log.setVisible(true);
+       }
        
     }//GEN-LAST:event_jButton1ActionPerformed
   
@@ -304,6 +342,7 @@ Calendar cal = Calendar.getInstance();
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollBar jScrollBar1;
     // End of variables declaration//GEN-END:variables
