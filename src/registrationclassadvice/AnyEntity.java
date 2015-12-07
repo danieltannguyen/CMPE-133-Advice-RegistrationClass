@@ -1,8 +1,6 @@
 
 package registrationclassadvice;
 
-import java.util.ArrayList;
-
 public class AnyEntity {
 	private int id;
 

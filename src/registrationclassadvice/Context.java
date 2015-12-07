@@ -2,7 +2,6 @@
 package registrationclassadvice;
 
 import java.util.List;
-
 public class Context {
 	private Type type;
 	private String contextType;

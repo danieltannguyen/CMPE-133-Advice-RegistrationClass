@@ -1,10 +1,10 @@
 
-package gg;
-
+package registrationclassadvice;
 import java.util.ArrayList;
 import java.util.List;
+import registrationclassadvice.AnyMedia;
 public class Event {
-	private List<Media> medias;
+	private List<AnyMedia> medias;
 	private String eventName;
 	private String eventLocation;
 	private ArrayList<String> attendees;
@@ -26,15 +26,15 @@ public class Event {
 	public ArrayList<String> getAttendees() {
 		return attendees;
 	}
-	public void recordedOn(List<Media> anyMedias) 
+	public void recordedOn(List<AnyMedia> anyMedias) 
 	{   
 		this.medias = anyMedias;  
 	}
-	public List<Media> getMedias()
+	public List<AnyMedia> getMedias()
 	{   
 		return medias;
 	}
-	public void setMedias(List<Media> medias) 
+	public void setMedias(List<AnyMedia> medias) 
 	{  
 		this.medias = medias;  
 		

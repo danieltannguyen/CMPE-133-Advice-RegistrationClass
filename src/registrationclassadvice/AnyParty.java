@@ -1,6 +1,5 @@
 
 package registrationclassadvice;
-
 //	A party is a group that is identified by a name and has licenses
 //	that gives them ownership to many things.
 public class AnyParty {

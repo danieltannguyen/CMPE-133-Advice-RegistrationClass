@@ -1,12 +1,10 @@
 
 package registrationclassadvice;
-
 /**
  *
  * @author Daniel Nguyen
  */
 public class Advising {
-
     /**
      * @param args the command line arguments
      */

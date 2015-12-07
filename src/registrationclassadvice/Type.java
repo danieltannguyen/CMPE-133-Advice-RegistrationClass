@@ -1,6 +1,5 @@
 
 package registrationclassadvice;
-
 import java.util.List;
 // A type is identified with a name and the context it exists within
 public class Type {

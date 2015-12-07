@@ -1,6 +1,5 @@
 
 package registrationclassadvice;
-
 public class ShoeSale {
 	public String name;
 	public AnyParty publishingParty;

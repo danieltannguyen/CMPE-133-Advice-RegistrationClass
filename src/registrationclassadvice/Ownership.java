@@ -1,6 +1,5 @@
 
 package registrationclassadvice;
-
 import java.util.List;
 
 public class Ownership {

@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package registrationclassadvice;
-
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author Daniel Nguyen
